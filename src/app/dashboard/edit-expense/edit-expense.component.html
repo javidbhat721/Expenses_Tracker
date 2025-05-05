@@ -1,0 +1,47 @@
+<div class="pcoded-content">
+  <div class="pcoded-inner-content">
+    <!-- Main-body start -->
+    <div class="main-body">
+      <div class="page-wrapper">
+        <!-- Page-header start -->
+        <div class="page-header card">
+          <div class="card-block">
+            <h5 class="m-b-10">Edit Expenses</h5>
+            <hr/>
+            <form [formGroup]="expenseForm" (ngSubmit)="onSubmit()">
+              <div class="form-group row">
+                <div class="col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    formControlName="expense"
+                    placeholder="Add Expenses">
+                </div>
+                <div class="col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    formControlName="amount"
+                    placeholder="Add Amount">
+                </div>
+              </div>
+              <div class="row m-t-30">
+                <div class="col-md-3">
+                  <button type="submit" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">
+                    Edit Expenses
+                  </button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main-body start -->
+
+    <div id="styleSelector">
+
+    </div>
+  </div>
+</div>
